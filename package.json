@@ -1,0 +1,29 @@
+{
+  "name": "idm222-gf379",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "esbuild": "^0.19.11",
+    "fsevents": "^2.3.3",
+    "hey-listen": "^1.0.8",
+    "motion": "^10.17.0",
+    "nanoid": "^3.3.7",
+    "picocolors": "^1.0.0",
+    "postcss": "^8.4.33",
+    "rollup": "^4.9.5",
+    "source-map-js": "^1.0.2",
+    "tslib": "^2.6.2",
+    "vite": "^5.0.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

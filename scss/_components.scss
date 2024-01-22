@@ -1,0 +1,28 @@
+@import "colors";
+@import "variables";
+
+button {
+  display: flex;
+  font-family: $ff-primary;
+  font-size: $fs-300;
+  padding: $base-padding;
+  min-height: 35px;
+  border-radius: 0.25em;
+  border: none;
+  transition: 0.25s;
+}
+@mixin btn($clr: black, $bg: white) {
+  background-color: $bg;
+  border: none;
+  border-radius: 0.25em;
+  color: $clr;
+  display: flex;
+  font-family: $ff-primary;
+  font-size: $fs-300;
+  padding: $base-padding;
+  min-height: 35px;
+  transition: 0.25s;
+}
+.hero-button {
+  @include btn($yellow, $black);
+}
