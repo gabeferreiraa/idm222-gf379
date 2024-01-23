@@ -1,10 +1,19 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   font-size: 16px;
+  cursor: none;
 }
 
 ul {
@@ -37,4 +46,26 @@ h5 {
 }
 h6 {
   font-size: 0.875rem;
+}
+.cursor-dot {
+  width: 13px;
+  height: 13px;
+  background-color: $yellow;
+}
+
+.cursor-outline {
+  width: 48px;
+  height: 48px;
+  border: 1px solid $yellow;
+}
+
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 500;
+  pointer-events: none;
 }

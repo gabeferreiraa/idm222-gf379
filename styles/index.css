@@ -371,10 +371,6 @@ body {
   display: flex;
 }
 
-.navbar ul li {
-  list-style: none;
-}
-
 .center {
   display: flex;
   margin: auto;
