@@ -43,6 +43,11 @@ body {
   box-sizing: border-box !important;
 }
 
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 html,
 body {
   max-width: 100%;
@@ -254,7 +259,7 @@ body {
   color: #fca311;
   font-family: "azeret_mono";
   letter-spacing: 0.7rem;
-  line-height: 1.7;
+  line-height: 1.5;
   text-decoration: none;
 }
 .content-wrapper .menu-text-wrapper .heading1-menu .heading1-menu-sub-wrapper .heading1-menu-item.page-transition-anim {

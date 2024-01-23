@@ -15,9 +15,7 @@
   font-size: $fs-300;
   padding: $base-padding;
   min-height: 35px;
-
   width: fit-content;
-
   @if $bg == $yellow {
     &:hover {
       background-color: $clear;
@@ -168,7 +166,7 @@
           color: $yellow;
           font-family: $ff-primary;
           letter-spacing: $letter-spacing-l;
-          line-height: 1.7;
+          line-height: 1.5;
           text-decoration: none;
 
           &.page-transition-anim {
