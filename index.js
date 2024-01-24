@@ -81,7 +81,7 @@ const daNegativeMotion = [
 
 activator.addEventListener("click", () => {
   if (menuOpen) {
-    timeline(daMotion, { duration: 0.8 });
+    timeline(daMotion, { duration: 0.6 });
     animate(
       ".heading1-menu",
       {
