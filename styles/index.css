@@ -134,6 +134,7 @@ h6 {
   --letter-spacing-l: 0.5rem;
 
   --navy: #14213d;
+  --crimson: #dc143c;
   --yellow: #fca311;
   --gray: #e5e5e5;
   --white: #fff;
@@ -406,14 +407,14 @@ button {
     }
   }
   .hero-definition {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    padding: var(--base-padding);
     justify-content: center;
-    align-items: flex-start;
+    left: 55%;
+    padding: var(--base-padding);
     position: absolute;
     top: 350px;
-    left: 55%;
     h3 {
       color: var(--white);
       max-width: 400px;
@@ -426,18 +427,18 @@ button {
       text-wrap: pretty;
       line-height: 1.5;
       text-transform: uppercase;
+
+      &:last-child {
+        color: var(--crimson);
+      }
     }
   }
   .local-time {
-    align-items: center;
-    bottom: 0;
-    color: var(--yellow);
-    display: flex;
+    color: var(--crimson);
     font-family: var(--ff-primary);
-    justify-content: flex-end;
-    position: absolute;
-    right: 2%;
-    top: 0;
+    letter-spacing: var(--letter-spacing-m);
+    position: relative;
+    right: 50px;
     transform: rotate(270deg);
   }
 }
@@ -468,13 +469,11 @@ button {
 .projects {
   height: 195vh; /* // ----------------Insert-Break-Point-for-smaller-sizes-140ish (vh)---------------------------// */
   top: calc(140vh + 40vh);
+  left: 0;
   background-color: var(--navy);
   position: absolute;
   margin: 10rem 0;
-  .project-text-wrapper {
-    margin: auto;
-    width: 125rem;
-  }
+  width: 100%;
   .projects-gallery {
     cursor: grab;
     .projects-wrapper {
@@ -482,19 +481,29 @@ button {
       width: 125rem;
       .projects-gallery-box {
         font-size: 0;
-        margin-top: 4rem;
+        margin-top: 2rem;
         .projects-gallery-wrapper {
           display: inline-block;
+          justify-content: center;
+          align-items: center;
           white-space: nowrap;
-          .projects-gallery-wrapper-media {
+          .projects-gallery-media {
             display: inline-block;
             font-size: 0;
             overflow: hidden;
-            padding-right: 1.5rem;
+            padding-right: 3rem;
             pointer-events: none;
             position: relative;
             vertical-align: top;
-            width: 127rem;
+            width: 67rem;
+            .projects-gallery-media-box {
+              height: 25rem;
+              position: relative;
+              width: 100%;
+              .projects-gallery-media-image {
+                object-fit: cover;
+              }
+            }
           }
         }
       }

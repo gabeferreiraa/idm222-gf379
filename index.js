@@ -1,6 +1,7 @@
+/* // -----------------Imports-------------------------// */
 import { animate, stagger, timeline, scroll } from "motion";
 
-// -------- Hamburger Animations --------//
+/* // -----------------HamburgerMenu-------------------------// */
 
 const hamburgerButton = document.getElementById("hamburger-button");
 const hamburgerMenu = document.getElementById("burger-white");
@@ -23,7 +24,7 @@ hamburgerButton.addEventListener("click", () => {
   }
 });
 
-// -------- Mouse Animations --------//
+/* // -----------------MouseAnimations-------------------------// */
 
 const cursorDot = document.querySelector("[data-cursor-dot]");
 const cursorOutline = document.querySelector("[data-cursor-outline]");
@@ -47,7 +48,7 @@ window.addEventListener("mousemove", function (e) {
   );
 });
 
-// -------- Set Current Page --------//
+/* // -----------------MenuActiveSelection-------------------------// */
 const activePage = window.location.pathname;
 const navLinks = document
   .querySelectorAll(".heading1-menu-sub-wrapper a")
@@ -60,8 +61,6 @@ const navLinks = document
 // -------- Animations Start --------//
 const activator = document.querySelector("#hamburger-button");
 // const mover = document.querySelector("#menu-open-wrapper");
-
-// scroll(animate(".progress", { strokeDasharray: ["0,1", "1,1"] }));
 
 let menuOpen = true;
 const daMotion = [
@@ -106,7 +105,7 @@ activator.addEventListener("click", () => {
 
   menuOpen = !menuOpen;
 });
-
+/* // -----------------PreLoader-------------------------// */
 setTimeout(() => {
   const loaderText = document.querySelector(".loader").querySelector("h1");
   const loader = document.querySelector(".loader");
@@ -119,6 +118,7 @@ setTimeout(() => {
   });
 }, 700);
 
+/* // -----------------HoverGlitchEffect-------------------------// */
 const letters =
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%&?'";
 
@@ -150,3 +150,21 @@ spanElements.forEach((span) => {
     }, 30);
   };
 });
+/* // -----------------CurrentTimeSet-------------------------// */
+const localTime = document.querySelector(".local-time");
+
+function updateTime() {
+  const now = new Date();
+  const hours = now.getHours();
+  const minutes = now.getMinutes();
+  const seconds = now.getSeconds();
+
+  const clockString = `${hours.toString().padStart(2, "0")}:${minutes
+    .toString()
+    .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+
+  localTime.innerText = clockString;
+}
+
+updateTime();
+setInterval(updateTime, 1000);
