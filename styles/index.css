@@ -127,6 +127,7 @@ h6 {
   --tablet-breakpoint: 768px;
   --desktop-breakpoint: 1024px;
 
+  --letter-spacing-xxs: 0.15rem;
   --letter-spacing-xs: 0.25rem;
   --letter-spacing-s: 0.35rem;
   --letter-spacing-m: 0.5rem;
@@ -637,7 +638,7 @@ button {
     }
     &:nth-child(3) {
       position: relative;
-      top: 70%;
+      top: 65%;
       left: 15%;
     }
   }
@@ -645,6 +646,7 @@ button {
 .contact-links-wrapper {
   height: 80vh;
   width: 100%;
+  margin-bottom: 90px;
   .contact-link {
     display: flex;
     justify-content: center;
@@ -653,7 +655,7 @@ button {
     font-family: var(--ff-primary);
     color: var(--white);
     font-size: var(--fs-200);
-    letter-spacing: var(--letter-spacing-xs);
+    letter-spacing: var(--letter-spacing-xxs);
     &:nth-child(1) {
       position: relative;
       top: 100px;
