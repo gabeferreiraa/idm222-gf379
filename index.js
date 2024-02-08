@@ -111,7 +111,7 @@ setTimeout(() => {
   const loader = document.querySelector(".loader");
 
   animate((progress) => (loaderText.innerHTML = Math.round(progress * 100)), {
-    duration: 1,
+    duration: 0.75,
     easing: "ease-out",
   }).finished.then(() => {
     loader.style.display = "none";
