@@ -25,6 +25,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -113,6 +114,7 @@ h6 {
   --fs-400: 1.25rem;
   --fs-300: 1rem;
   --fs-200: 0.875rem;
+  --fs-100: 0.65rem;
 
   --base-padding: 1em;
   --base-button-padding: 0.5em 1.5em;
@@ -124,6 +126,7 @@ h6 {
   --tablet-breakpoint: 768px;
   --desktop-breakpoint: 1024px;
 
+  --letter-spacing-3xs: 0.05rem;
   --letter-spacing-xxs: 0.15rem;
   --letter-spacing-xs: 0.25rem;
   --letter-spacing-s: 0.35rem;
@@ -350,11 +353,10 @@ button {
       }
       .paragraph-link {
         text-decoration: none;
-        color: var(--yellow);
+        color: inherit;
       }
     }
     .menu-contact-wrapper {
-      text-decoration: none;
       color: var(--yellow);
       font-family: var(--ff-primary-italic);
       line-height: 5;
@@ -672,6 +674,31 @@ button {
   }
 }
 
+.project-text-wrapper {
+  padding: 0 1em;
+  width: auto;
+}
+.project-text-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5em;
+}
+.project-header {
+  width: 56rem;
+  line-height: 2;
+  font-size: var(--fs-200);
+  text-transform: uppercase;
+  margin-top: -0.5em;
+  span {
+    color: var(--yellow);
+    font-weight: bold;
+  }
+}
+.project-desc {
+  line-height: 1.7;
+  font-weight: 800;
+  text-wrap: pretty;
+}
 /* // ------------------Holder-For-Now-------------------------// */
 /* Styles for light mode */
 @media (prefers-color-scheme: light) {
@@ -885,6 +912,17 @@ button {
         top: -150px;
         left: 120px;
       }
+    }
+  }
+  .project-text-container {
+    flex-direction: column;
+    gap: 1em;
+    font-size: var(--fs-200);
+    .project-header {
+      line-height: 1.5;
+    }
+    .project-desc {
+      line-height: 1.6;
     }
   }
 }

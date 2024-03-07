@@ -165,6 +165,5 @@ function updateTime() {
 
   localTime.innerText = clockString;
 }
-
 updateTime();
 setInterval(updateTime, 1000);
