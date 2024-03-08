@@ -1,5 +1,5 @@
 /* // -----------------Imports-------------------------// */
-import { animate, stagger, timeline, scroll } from "motion";
+import { animate, timeline } from "motion";
 
 document.addEventListener("DOMContentLoaded", function () {
   // Check if the 'firstLoadDone' flag is set in sessionStorage
