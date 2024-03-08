@@ -119,17 +119,17 @@ activator.addEventListener("click", () => {
   menuOpen = !menuOpen;
 });
 /* // -----------------PreLoader-------------------------// */
-setTimeout(() => {
-  const loaderText = document.querySelector(".loader").querySelector("h1");
-  const loader = document.querySelector(".loader");
+// setTimeout(() => {
+//   const loaderText = document.querySelector(".loader").querySelector("h1");
+//   const loader = document.querySelector(".loader");
 
-  animate((progress) => (loaderText.innerHTML = Math.round(progress * 100)), {
-    duration: 0.75,
-    easing: "ease-out",
-  }).finished.then(() => {
-    loader.style.display = "none";
-  });
-}, 700);
+//   animate((progress) => (loaderText.innerHTML = Math.round(progress * 100)), {
+//     duration: 0.75,
+//     easing: "ease-out",
+//   }).finished.then(() => {
+//     loader.style.display = "none";
+//   });
+// }, 700);
 
 /* // -----------------HoverGlitchEffect-------------------------// */
 const letters =
