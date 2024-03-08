@@ -14,13 +14,12 @@
     "rollup": "^4.9.5",
     "source-map-js": "^1.0.2",
     "tslib": "^2.6.2",
-    "vercel": "^33.5.4",
     "vite": "^5.1.5"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
-    "build": "cp contact.html work.html dist/ && vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "keywords": [],
