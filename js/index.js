@@ -1,6 +1,19 @@
 /* // -----------------Imports-------------------------// */
 import { animate, stagger, timeline, scroll } from "motion";
 
+document.addEventListener("DOMContentLoaded", function () {
+  // Check if the 'firstLoadDone' flag is set in sessionStorage
+  if (!sessionStorage.getItem("firstLoadDone")) {
+    // Set 'firstLoadDone' flag to true
+    sessionStorage.setItem("firstLoadDone", "true");
+    // Redirect to index.html only if not already there
+    if (window.location.pathname !== "/index.html") {
+      window.location.href = "/index.html";
+    }
+  }
+  // If 'firstLoadDone' is set, do nothing and let the user navigate the site normally
+});
+
 /* // -----------------HamburgerMenu-------------------------// */
 
 const hamburgerButton = document.getElementById("hamburger-button");
