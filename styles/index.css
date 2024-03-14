@@ -194,6 +194,61 @@ button {
     }
   }
 }
+@media (prefers-color-scheme: light) {
+  button {
+    border: 2.5px solid var(--clear);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-300);
+    width: fit-content;
+    padding: var(--base-button-padding);
+    &.yellow-button {
+      border-color: var(--yellow);
+      background-color: var(--clear);
+      color: var(--yellow);
+      &:hover {
+        background-color: var(--yellow);
+        color: var(--white);
+      }
+    }
+    &.black-button {
+      border-color: var(--yellow);
+      background-color: var(--clear);
+      color: var(--yellow);
+      &:hover {
+        background-color: var(--clear);
+        color: var(--white);
+      }
+    }
+    &.white-button {
+      border-color: var(--white);
+      background-color: var(--clear);
+      color: var(--white);
+      &:hover {
+        background-color: var(--black);
+        color: var(--white);
+      }
+    }
+    &.navy-button {
+      border-color: var(--navy);
+      background-color: var(--clear);
+      color: var(--navy);
+      &:hover {
+        background-color: var(--navy);
+        color: var(--gray);
+      }
+    }
+    &.gray-button {
+      border-color: var(--gray);
+      background-color: var(--clear);
+      color: var(--gray);
+      &:hover {
+        background-color: var(--gray);
+        color: var(--navy);
+      }
+    }
+  }
+}
+
 /* =======================================================================
 ===================Home Page Styles====================================
 ======================================================================= */
@@ -706,6 +761,9 @@ button {
     background-color: var(--gray); /* Light background color */
     color: var(--navy); /* Dark text color */
   }
+  #hamburger-button {
+    filter: invert(100%);
+  }
   .menu-open-wrapper {
     background: url(../images/curves-lines-image.jpg),
       var(--navy) 50% / cover no-repeat;
@@ -726,9 +784,40 @@ button {
       color: var(--yellow);
     }
   }
-  .black-button {
+  a&.black-button {
     border-color: var(--yellow);
     color: var(--yellow);
+  }
+  .work-wrapper {
+    .work-hero-wrapper {
+      .work-hero-text {
+        color: var(--navy);
+      }
+      .work-hero-stack {
+        color: var(--navy);
+      }
+    }
+    .work-road-ahead {
+      border-color: var(--navy);
+      .work-road-ahead-text {
+        color: var(--navy);
+      }
+    }
+  }
+  .project-header {
+    span {
+      color: var(--crimson);
+    }
+  }
+  .contact-hero-section {
+    .contact-hero-text {
+      color: var(--navy);
+    }
+  }
+  .contact-links-wrapper {
+    .contact-link {
+      filter: invert(100%);
+    }
   }
 }
 
