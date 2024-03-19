@@ -14,7 +14,7 @@
     "source-map-js": "^1.0.2",
     "tslib": "^2.6.2",
     "vercel": "^32.3.0",
-    "vite": "^5.1.5"
+    "vite": "^5.1.6"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
