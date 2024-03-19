@@ -885,12 +885,12 @@ button {
     }
     .hero-definition {
       left: 20%;
-      top: 500px;
+      top: 430px;
       h3 {
         font-weight: 100;
         font-size: var(--fs-200);
-        line-height: 1.7;
-        letter-spacing: var(--letter-spacing-xs);
+        line-height: 1;
+        letter-spacing: var(--letter-spacing-xxs);
       }
     }
   }
@@ -961,7 +961,7 @@ button {
       line-height: 1.8;
       &:nth-child(2) {
         top: 40%;
-        left: 20%;
+        left: 15%;
       }
       &:nth-child(3) {
         top: 55%;
@@ -969,7 +969,7 @@ button {
     }
   }
   .contact-links-wrapper {
-    height: 60vh;
+    height: 70vh;
     max-width: 478px;
     margin-bottom: 3rem;
     overflow-x: hidden;
