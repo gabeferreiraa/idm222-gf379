@@ -28,12 +28,6 @@ export default defineConfig({
     // Example: vue(), reactRefresh()
   ],
 
-  build: {
-    target: "esnext", // Use modern JavaScript
-    sourcemap: true, // Enable source maps for better debugging
-    outDir: "dist", // Customize the output directory if needed
-  },
-
   // Server-specific options for development
   server: {
     port: 3000, // Development server port
